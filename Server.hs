@@ -10,8 +10,8 @@
   
 --}
 module Main where
-import Control.Monad.Trans
-import Control.Concurrent.STM
+import Control.Monad.Trans (lift)
+import Control.Concurrent.STM (TVar, atomically, newTVar, readTVar, writeTVar)
 import Happstack.Server (nullConf, simpleHTTP, toResponse, ok)
 import Happstack.Server.Internal.Types
 import Happstack.Server.Internal.Monads
