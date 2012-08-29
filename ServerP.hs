@@ -10,9 +10,8 @@
   to access server: http://localhost:8000
   refreshing the page increments the counter
   the counter persists between shutdowns
-  
-  
 --}
+
 module Main where
 import Control.Monad.Trans (lift)
 import Control.Concurrent (MVar, newMVar, takeMVar, putMVar)
