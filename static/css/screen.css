@@ -1,0 +1,16 @@
+body {
+    font-family: arial;
+    color: darkblue;
+    font-family: "DejaVu Sans Mono", "Lucida Console", monospace;
+    }
+#header {
+    font-size: 24px;
+    color: darkgray;
+    text-indent: 0.5em;
+    border-color: darkgray;
+    border-bottom-style: solid;
+}
+p {
+    color:blue;
+}
+
