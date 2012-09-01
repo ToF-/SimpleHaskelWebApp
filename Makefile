@@ -1,12 +1,18 @@
+C=ghc
+F=--make -threaded
+
+
 p: ServerP.hs
-	ghc --make -threaded ServerP.hs -o bin/serverp
+	$(C) $(F) ServerP.hs -o bin/serverp
 
 param: ParameterServer.hs
-	  ghc --make -threaded ParameterServer -o bin/paramserver
+	  $(C) $(F) ParameterServer -o bin/paramserver
 
 form: FormServer.hs
-	ghc --make -threaded FormServer.hs -o bin/formserver
+	$(C) $(F) FormServer.hs -o bin/formserver
 
+upload: UploadServer.hs
+	$(C) $(F) UploadServer.hs -o bin/uploadserver 	
 
 clean:
 	rm *.hi
