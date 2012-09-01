@@ -14,6 +14,9 @@ form: FormServer.hs
 upload: UploadServer.hs
 	$(C) $(F) UploadServer.hs -o bin/uploadserver 	
 
+dice:
+	$(C) $(F) DiceServer.lhs -o bin/diceserver
+
 clean:
 	rm *.hi
 	rm *.o
