@@ -37,7 +37,7 @@ renderDice ts = H.html $
    do H.head $ do H.title "Dice"
                   styleSheet "static/css/dice.css"
       H.body $ do renderThrows ts
-                  H.p "This are the dice throws you asked for." 
+                  H.p "These are the dice throws you asked for." 
 
 serveMainPage :: ServerPart Response
 serveMainPage = do arg  <- look "throws"

@@ -6,18 +6,19 @@ body {
     }
 #throws {
     text-align: center;
-    font-size: 24px;
+    font-size: 48px;
     color: yellow;
-    background: black;
+    background: green;
     text-indent: 0.5em;
     margin-top: 100px;
     margin-bottom: 100px;
-    border: 2px;
-    border-color: yellow;
+    border: 4px;
+    border-color: darkgreen;
     border-style: solid;
 }
 p {
     color:orange;
     text-align: center;
+    font-size: 24px;
 }
 

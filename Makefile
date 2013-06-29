@@ -1,5 +1,5 @@
 C=ghc
-F=--make -threaded
+F=--make -threaded 
 
 
 p: ServerP.hs
