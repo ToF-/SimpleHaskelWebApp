@@ -9,6 +9,15 @@ Serving the main page consists in looking for the parameter "throws"
 in the request, interpret the parameter value, call the generator, 
 and render the page. 
 
+build:
+ ghc --make -threaded DiceServer.lhs -o bin/diceserver
+
+run:
+ bin/diceserver
+
+example:
+ http:/localhost:8000/dice?throws=3
+ 
 \begin{code}
 {-# LANGUAGE FlexibleContexts, OverloadedStrings #-}
 
